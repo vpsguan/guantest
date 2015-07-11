@@ -1,0 +1,26 @@
+#divcon{
+	width:1000px;
+	height:140px;
+}
+#divcenter{
+	width:1000px;
+	height:auto;
+	margin-top:20px;
+}
+#ta{
+	border-style:dotted;
+	border-color:#393;
+	text-align:center;
+	width:400px;
+	height:auto;
+	margin-left:300px;
+	height:100px;
+	line-height:30px;
+}
+.a1{
+	margin:2px;
+	font-size:11px;
+}
+.p1{
+	margin-left:10px;
+}

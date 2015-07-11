@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+* {
+	padding:0;
+	margin:0;
+}
+body {                      
+	width:auto;
+	padding:0px;
+	margin:20px 280px;
+	background-color:#f5eee1;
+}
+h2{
+	text-align:center;
+}
+#install_bg{
+	width:800px;
+	height:800px;
+	border:2px solid blue;
+	background:url(../images/bg_footer.gif) ;
+}
+#install_h_bg{
+	width:800px;
+	height:100px;
+	background:url(../images/install_h_bg.jpg);
+}
+#contents dt{
+	width:800px;
+	height:auto;
+	text-align:center;
+	padding-top:5px;	
+}
+#contents dd{
+	width:400px;
+	height:35px;
+	padding:5px 0;
+	aglign:0 auto;
+	margin-left:200px;
+}
+#contents dd input.text{
+	width:220px;
+	height:20px;
+	border:1px bolid #333;
+	background:#fff;
+}
+#install_bg form dl input.submit{
+	width:50px;
+	height:25px;
+}

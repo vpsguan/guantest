@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+ * 肖祖鹏
+ * ask.css
+ * 2012/7/17
+*/
+p{margin:auto auto;
+padding:auto auto;
+font-size:18px;
+font-family:Verdana, Geneva, sans-serif;
+color:#333;
+}
+h1{
+padding:auto auto;
+font-size:15px;
+font-family:Verdana, Geneva, sans-serif;
+color:#333;
+}
+#person{
+	width:1000px;
+	height:800px;
+	margin:20px auto;
+	border:#039 1px solid;
+}
+
+#person .details{width:796px;
+height:800px;
+border:#999999 1px solid;
+float:left;
+}
+#person .details .userinfo{
+	width:796px;
+	height:300px;
+	margin:10px auto;
+}
+#person .details .userinfo .info{
+float:left;
+width:476px;
+height:245px;
+color:#999999;
+font-family:Verdana, Geneva, sans-serif;
+font-size:19px;
+border:#999999 1px solid;
+}
+#person .details .userinfo .info .left{
+	width:235px;
+	float:left;
+	font-size:19px;
+	line-height:30px;
+	margin:auto;
+}
+#person .details .userinfo .info .right{
+	width:235px;
+	float:right;
+	font-size:19px;
+	line-height:30px;
+	margin:auto;
+}
+#person .details .userinfo .charge{
+float:right;
+width:240px;
+height:195px;
+color:#999999;
+font-family:Verdana, Geneva, sans-serif;
+font-size:15px;
+margin:auto;
+border:#999999 1px solid;
+}
+#person .details .userinfo .charge .left1{
+	width:118px;
+	float:left;
+	font-size:19px;
+	line-height:50px;
+	margin:auto;
+}
+#person .details .userinfo .charge .right1{
+	width:118px;
+	float:left;
+	font-size:19px;
+	line-height:50px;
+	margin:auto;
+}
+#person .details .introduction{
+	width:796px;
+	height:150px;
+	border:#CC0000 1px solid;
+	margin:20px auto 10px;
+}
+.name_score{
+float:left;
+width:75px;
+height:50px;
+color:#0000CC;
+margin:0 10px;
+line-height:35px;
+}
+.name_score_up{
+	height:35px;
+}
+.name_score_down{
+	height:35px;
+}
+#person .details .score{
+	width:796px;
+	height:350px;
+	margin:10px auto;
+}
+#person .details .score .part1{
+	width:796px;
+	height:90px;
+	border:#999999 1px solid;
+}

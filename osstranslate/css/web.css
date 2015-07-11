@@ -1,0 +1,37 @@
+/* CSS Document */
+*{ margin:0; padding:0;}
+body{ font-size:12px; text-align:center; background:url(../images/pagebg.gif) #244661 repeat-x left top; color:#FFFFFF;}
+a{ color:#FFFFFF; text-decoration:none;}
+a:hover{ color:#CCCC00; text-decoration:underline;}
+#wrapper{ width:1002px;margin:0 auto;}
+#header{ height:157px;text-align:left; padding-top:1px;}
+#main{ width:807px; height:391px; background:url(../images/mainbg.gif) no-repeat; margin:0 auto; text-align:left;}
+#footer{ width:807px; height:58px; background:url(../images/footerbg.gif) no-repeat; margin:0 auto; margin-top:23px; line-height:58px; color:#CCCCCC;}
+
+/*=========header CSS=======*/
+#logo a{ display: block; width:347px; height:54px; background:url(../images/logo.gif) no-repeat; text-indent:-1000px; margin-top:60px; margin-left:20px;}
+
+/*=========main CSS========*/
+
+/*---------index css-----------*/
+#newsflash{ width:393px; height:298px; background:url(../images/flashbg.gif) no-repeat; float:left; margin-left:40px; margin-top:50px;}
+#newsflash object{ margin-top:4px; margin-left:4px;}
+#newslist{ width:312px; float:right; margin-right:30px;  padding-top:35px;}
+#newslist h2{ color:#FFFFFF; font-family:"幼圆", "宋体"; font-size:14px; padding-right:20px; border-bottom:2px dotted white; text-align:right;}
+#newslist h2 label{ font-size:22px;  font-family:"Arial Black"; margin-right:10px;}
+#newslist ul{ height:235px; margin-top:10px;}
+#newslist ul li{ color:#FFFFFF; line-height:25px; height:25px;padding-left:15px;}
+#newslist ul li a{ display:block;}
+#newslist ul li a:hover{ text-decoration:none;}
+#newslist ul li.even{ background:url(../images/wicon.gif) no-repeat left center; }
+#newslist ul li.odd{background:url(../images/gicon.gif) no-repeat left center;}
+#newslist ul li.even a{ color:#66FF66;}
+#newslist ul li.even a:hover{color:#CCCC00;}
+.pagenav{ text-align:center; margin-top:20px;}
+.pagenav a{ margin-left:5px; margin-right:5px;}
+
+/*---------news css-----------*/
+.newstitle{ line-height:30px; height:30px; color:#66FF66; text-align:center; font-size:16px; font-weight:600; margin-top:15px; margin-bottom:10px;}
+.newsdate{ padding-left:20px; font-size:13px; font-weight:500; margin-bottom:10px;}
+#main .content{ padding:20px; line-height:20px; height:250px; overflow:auto; margin:auto 10px;}
+#main .content p{ text-indent:2em;}

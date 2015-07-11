@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+*{margin:0;padding:0;}
+textarea {  overflow: hidden; z-index: y; clip:  rect(   )}
+dd{
+	margin-top:20px;
+	text-align:left;
+}
+#conleft{
+	width:200px;
+	height:auto;
+	float:left;
+	border:3px #FF33FF solid;
+}
+.text{
+	border-bottom:1px solid #005aa7;	/* 下划线效果 */
+	color:#005aa7;
+	border-top:0px; border-left:0px;
+	border-right:0px;
+	background-color:#99FF33;		/* 背景色透明 */
+}
+.button{
+	font-size:15px;
+	color:#0033CC;
+	background-color:transparent;		/* 背景色透明 */
+	border:0px;							/* 边框取消 */
+}
+#contents{
+	width:760px;
+	height:280px;
+	float:left;
+	margin-left:20px;
+}

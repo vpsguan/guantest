@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+/*
+*袁俊虎 
+*修改 
+*2012/7/26
+*/
+* {
+	padding:0;
+	margin:0;
+}
+body {                      
+	width:1000px;
+	height:auto;
+	padding:0px;
+	margin:0px 170px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#EFFBFF,endColorStr=#66CCFF);
+	/*background-color:#d8c7b4;*/
+	background:url(../images/body_bg.jpg) repeat;
+	border:2px solid red;
+}
+a:link{
+	color:#000;
+	text-decoration:none; /*袁俊虎 修改*/
+	}
+a:visited{
+	color:red;           /*修改 袁*/
+}
+a:hover{
+	color:#000099;
+	}
+a:active{
+	color:#6600FF;
+	}
+#header{                     
+	width:1000px;
+	height:175px;
+}
+#header table{         
+	background:url(../images/banner.jpg) repeat-x;
+	width:100%;
+	padding-left:0px;
+}
+#header table tr td p{         
+	font-size:80px;
+	font-style:italic;
+	letter-spacing:-5px;		
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+}
+.l{ color:#3300FF;}
+.z{color:#FF0000;}
+.u{color:#FF9900;}
+.a{color:#3300FF;}
+.s{color:#33CC00;}
+.k{color:#FF0000;}
+#header table.links{                
+	background:url(../images/button1_bg.jpg) repeat;
+	font-size:16px;
+	width:100%;
+	height:25px;
+}
+#links_a a{
+	width:80px; height:25px;  /*袁俊虎  修改 2012/7/26*/
+	text-decoration:none;
+	text-align:center;
+	float:left;
+	margin-left:5px;
+}
+#links_a a:link{           /*袁俊虎  修改  2012/7/26  此处 a:hover必须位于 link  visited 之后 active位于 最后 */
+	color:#000000;
+	text-decoration:none;
+	}
+#links_a a:visited{
+	color:#000000;
+}
+#links_a a:hover{
+	color:#99FF00;
+	background:url(../images/button2.jpg) no-repeat;	
+}
+#links_a a:active{
+	color:#000000;
+}
+#footer{                                   
+	width:1000px;
+	height:80px;
+	position:relative;
+	bottom:0px;
+/*	margin:20px 0 20px 0; */  /*袁俊虎  修改 2012/7/26 */
+	margin-top:10px;
+	margin-left:0px; 
+	border:2px solid red;
+	background:url(../images/footer.jpg) repeat;
+}
+#footer p{
+	text-align:center;
+	font-size:45px;
+	color:green;
+}
+

@@ -1,0 +1,239 @@
+@CHARSET "UTF-8";
+/*
+ * 肖祖鹏
+ * ask.css
+ * 2012/7/13
+ * 袁俊虎
+ * 修改
+ * 2012/7/25
+ *2012、8、13
+*/
+     
+/*搜索栏*/
+#search{
+	width:1000px;
+	height:60px;        /*修改 袁俊虎 图片也修改为80px*/
+	margin:0px 0px;
+	background:url(default/search_bg.jpg);
+}
+/*搜索栏左边*/
+#search .leftborder{
+/*	background-image:url(default/search_left_border.gif); 袁俊虎  修改*/        
+	height:60px;
+	width:4px;
+	float:left;
+}
+#search .rightborder{
+/*	background-image:url(default/search_right_border.gif);         袁俊虎修改*/
+	height:60px;
+	width:4px;
+	float:right;
+}
+#search .count{
+	float:left;
+	width:200px;
+	height:60px;
+}
+#search .count ul{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;       
+	list-style:none;
+	line-height:20px;        /*袁俊虎 修改*/
+	margin:10px 20px;	
+}
+#search .count ul li{
+	display:inline;
+	}
+/*搜索栏中间*/
+#search form{
+	float:left;
+	width:450px;
+	height:40px;
+	margin:20px 20px 15px 70px;
+}
+#search form input.input{   /*袁俊虎修改   输入框太小  我改大了*/
+	width:200px;
+	height:26px;
+	font-size:20px;
+}
+#search form input{
+/*	line-height:25px;     */
+	float:left;
+	margin-left:5px; 
+}
+/*搜索栏右边*/
+#search .online{
+	float:right;
+	width:200px;
+	height:100%;
+	text-align:right;
+	margin-right:32px;
+}
+#search .online ul li{       /*  修改了  点 行间距*/
+	list-style:none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*内容展示栏*/
+#content{
+	width:1000px;
+	height:600px;
+/*	margin:0px auto;*/
+/*	border:#CC0000 1px solid;*/
+}
+/*展示栏左边*/
+#content .left{
+	float:left;
+	width:258px;
+	height:100%;
+/*	border:red 1px solid;*/
+/*	margin:40px 10px 10px 10px;*/
+	line-height:20px;
+	text-align:left;
+}
+#content .left .classify{width:200px;height:170px;margin:10px;}
+#content .left .charts{width:200px;height:170px;margin:10px;}
+/***右边栏*/
+#content .right{
+	float:left;
+	width:258px;
+	height:100%;
+	margin:10px;
+	line-height:20px;
+	text-align:left;
+}
+#content .right .message{width:248px;height:170;margin:10px;}
+#content .right .hot{width:248px;height:170;margin:10px;}
+/*展示栏中间*/
+#content .center{
+	float:left;
+	width:420px;
+	height:500px;
+/*	border:green 1px solid;*/
+/*	margin:0px 0px 0px 0px;*/
+    margin-left:10px;
+}
+/*左边右边公共部分*/
+.details{
+	background-image:url(default/.details.jpg);
+	width:248px;
+	height:150px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-style:normal;
+	color:#000000;
+}
+.details .tittle1{
+	width:248px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#000000;
+}
+.details .content4{
+	width:248px;
+	height:80px;
+	font-family:"Courier New", Courier, monospace;
+	font-size:17px;
+}
+.details .more{
+	width:248px;
+	height:30px;
+	text-align:center;
+}
+.up{
+	background:url(default/.up.gif);
+	width:248px;
+	height:10px;
+}
+.down{background:url(default/.down.gif);
+width:248px;
+height:10px;
+}
+/*公共部分结束*/
+
+#content .center .details1{
+	width:420px;
+	height:auto;
+	margin:10px 0px;
+}
+#content .center .details1 .title{
+width:410px;
+height:10px;
+float:left;
+background:url(default/.details_bg.gif);
+}
+#content .center .details1 .title .left0{background:url(default/.title.gif);
+width:180px;
+height:36px;
+margin:0px 5px;
+text-align:center;
+line-height:36px;
+float:left;
+}
+#content .center .details1 .title .right0{width:50px;
+height:36px;
+float:right;
+text-align:center;
+line-height:36px;
+}
+#content .center .details1 .title_left_border{
+width:0px;
+height:0px; 
+float:left;
+background:url(default/.left_gb.gif);
+}
+#content .center .details1 .title_right_border{width:4px;
+height:36px;
+float:left;
+background:url(default/.right_gb.gif);
+}
+#content .center .details1 .content1{
+	height:auto;
+	width:410px;
+	font:Verdana, Geneva, sans-serif;
+	font-size:14px;
+
+}
+#content .center .details1 .content1 .piece.td.title5
+{
+	width:300px;
+	height:auto;
+}
+
+
+#content .center .details1 .content1 .piece.time5
+{
+	width:20px;
+	height:30px;
+	float:right;
+	text-align:center;
+	line-height:20px;
+}
+#content .center .details1 .content1 .piece.author5
+{
+	width:200px;
+	height:20px;
+	float:left;
+	text-align:left;
+}
+#content .center .details1 .content1 a:link {
+ color: #000000;
+ TEXT-DECORATION: none
+}
+
+#content .center .details1 .content1 a:visited {
+ COLOR: #000000;
+ TEXT-DECORATION: none
+}
+#content .center .details1 .content1 a:hover {
+ COLOR: #ff7f24;
+ text-decoration: underline;
+}
+#content .center .details1 .content1 a:active {
+ COLOR: #ff7f24;  
+ text-decoration: underline;
+}
+
+/*展示栏右边*/
+

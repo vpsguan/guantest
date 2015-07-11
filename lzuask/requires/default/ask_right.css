@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+*{margin:0;padding:0;}
+#answerstar{
+	width:120px;
+	height:auto;
+	float:left;
+}

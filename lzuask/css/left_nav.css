@@ -1,0 +1,80 @@
+/* CSS Document */
+*{margin:0;padding:0;}
+#person .nav{
+width:200px;
+height:800px;
+border:#039 1px solid;
+float:left;
+}
+#person .nav .avatar{width:198px;
+height:200px;
+border:#CC0000 1px solid;
+}
+#person .nav .avatar img{
+	width:197px;
+	height:160px;
+	border:#CC0000 1px solid;
+	margin:0 auto 5px;
+}
+#person .nav .avatar .username{
+	width:198px;
+	height:35px;
+	text-align:center;
+}
+#nav1{
+width:198px;
+height:220px;
+/*#999999*/
+}
+#nav1 li{
+width:198px;
+height:70px;
+border:red 1px solid;
+/*text-align:left;*/
+line-height:68px;
+list-style:none;
+/*margin:0px auto 0px auto;*/
+background:url(default/.nav.gif);
+}
+#nav1 li ul{
+ line-height: 27px;  list-style-type: none;text-align:left;
+left: -999em; width: 180px; position: absolute; 
+}
+#nav li ul li{
+ float:left; width:180px;
+ background:#F6F6F6; 
+}
+#nav1 a{
+ display: block; width:198px; text-align:center;
+}
+#nav1 a:link{
+ color:#666; text-decoration:none;
+}
+#nav1 a:visited{
+ color:#666;text-decoration:none;
+}
+#nav1 a:hover{
+ color:#FFF;text-decoration:none;font-weight:bold;
+}
+#nav1 li a:hover{
+ background:#999;
+}
+#nav1 li ul a{
+ display: block; width:176px;text-align:left;padding-left:24px;
+}
+#nav1 li ul a:link{
+ color:#666; text-decoration:none;
+}
+#nav1 li ul a:visited{
+ color:#666;text-decoration:none;
+}
+#nav1 li ul a:hover{
+ color:#F3F3F3;text-decoration:none;font-weight:normal;
+ background:#C00;
+}
+#nav1 li:hover ul{
+ left: auto;
+}
+#nav1 li.sfhover ul{
+ left: auto;
+}

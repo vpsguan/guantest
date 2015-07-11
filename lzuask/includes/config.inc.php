@@ -1,0 +1,1 @@
+<?php define(DB_HOST,localhost);define(DB_USER,root);define(DB_PWD,yuanjunhu);define(DB_NAME,aaa);define(DB_PRE,lzu_);?>

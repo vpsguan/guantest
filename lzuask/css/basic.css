@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+*{margin:0;padding:0;}
+textarea { overflow: hidden; z-index: y; clip:  rect(   )}
+h2{
+	color:red;
+	font-size:30px;
+	text-align:center;
+}
+#neirong{
+	width:1000px;
+	height:auto;
+/*	background-color:#ebf7ff;*/
+}
+#share{
+	width:180px;
+/*	height:100%;*/
+	float:left;
+	border:1px solid green;
+}
+#ask{
+	width:600px;
+/*	height:auto; */
+	float:left;
+	margin-left:18px;
+	background:url(../images/index/say_bg.jpg) repeat;
+/*	border:1px solid green;	*/
+}
+#show{
+	width:180px;
+/*	height:auto; */
+	float:right;
+	border:1px solid green;
+}
+#write{
+	width:580px;
+	height:auto;	
+	margin-left:10px;
+}
+#write form textarea.text{
+	width:580px;
+	height:auto;
+	margin-top:10px;
+	border:none;
+}
+#write form input.submit{
+	width:65px;
+	height:28px;
+	margin-top:10px;
+	margin-left:520px;
+	border:1px solid #ABABAB;
+}
+#say_show{
+	width:auto;
+	height:auto;
+	/*overflow-y:auto;*/
+}
+#say_show dl{
+	width:580px;
+	height:auto;
+/*	border:1px solid red;*/
+	margin-left:10px;
+	margin-top:10px;
+}
+#say_show dl dt{
+	width:580px;
+	height:auto;
+/*	margin-left:20px; */
+/*	background-color:#FF9999;*/
+/*	border:1px dashed white;*/
+}
+#say_show dl dt p{
+	width:580px;
+	height:auto;
+}
+#say_show dl dd{
+	width:580px;
+	height:auto;
+	margin-left:35px;
+/*	background:#FFCC99;  */
+/*	border:1px solid red;*/
+}
+#say_show dl form dd input.text{
+	width:320px;
+	height:10px;
+	margin-left:0px;
+	border-bottom:1px solid #005aa7;	/* 下划线效果 */
+	color:#00FF00;
+	border-top:0px; border-left:0px;
+	border-right:0px;
+/*	border:1px solid #FFCC66;*/
+	background-color:transparent;
+/*	background:url(../images/index/answer_bg.jpg) repeat;*/
+}
+#say_show dl form dd input.sub{
+	width:40px;
+	height:20px; 
+	float:right;
+	margin-right:40px;
+	background-color:transparent;		/* 背景色透明 */
+	border:0px;							
+/*	background:url(../images/index/page_sub.jpg) repeat;*/
+/*	border:1px solid #ABABAB;*/
+}
+#page_num{
+	margin-top:30px;
+	width:auto;
+	height:60px;
+}
+#page_num  li{
+	width:20px;
+	height:20px;
+	float:right;
+	list-style:none;
+}
+#page_num  ul{
+	width:50px;
+	height:20px;
+	float:right;
+	list-style:none;
+}

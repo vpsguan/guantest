@@ -1,0 +1,87 @@
+/* CSS Document */
+body{
+background-color:#ebf7ff;
+	margin: 0px;
+	padding:0px;
+	text-align:center;
+}
+#title {
+border:1px solid ;
+	border-color:#CCCCCC;
+	left:130px;
+	top:150px;
+	width:50%;
+	height:800px;
+	float:left;
+	position:relative;
+    overflow:hidden;
+	white-space:nowrap;
+	text-align:left;	
+}
+#sititle {
+border:1px solid ;
+	border-color:#CCCCCC;
+	left:130px;
+	top:150px;
+	width:50%;
+	height:800px;
+	float:left;
+	position:relative;
+	overflow:auto;
+
+	text-align:left;
+}
+#sititle ul#tid{
+font-size:36px;
+float:none;
+text-align:center;
+color:#0033CC;
+
+}
+#sititle label#date{
+font-size:16px;
+margin-left:30px;
+color:#999999;
+}
+#sititle label#editer{
+font-size:16px;
+margin-left:30px;
+color:#999999;
+}
+#content 
+{
+text-indent:30px;
+}
+#right{
+border:1px solid ;
+	border-color:#CCCCCC;
+	top:150px;
+	width:26%;
+	left:130px;
+	position:relative;
+	float:left;
+	height:200px;
+	
+}
+#right2{
+border:1px solid ;
+top:150px;
+	border-color:#CCCCCC;
+	width:26%;
+	left:130px;
+	position:relative;
+	float:left;
+	height:500px;
+	
+}
+#fclass6
+{
+     float:left;
+	 top:150px;
+	 height:200px;
+	 position:relative;
+	 width:100%;
+	 padding-bottom:60px;
+	  border:1px solid ;
+	 border-color:#999999;
+}

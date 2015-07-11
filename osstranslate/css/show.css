@@ -1,0 +1,46 @@
+/* CSS Document */
+body{
+background-color:#ebf7ff;
+	margin: 0px;
+	padding:0px;
+	text-align:center;
+}
+#left {
+background-color:#33CCCC;
+border:1px solid ;
+	border-color:#CCCCCC;
+	left:130px;
+	top:150px;
+	width:150px;
+	height:300px;
+	float:left;
+	position:relative;
+}
+#center{
+border:1px solid ;
+	border-color:#CCCCCC;
+	top:150px;
+	width:700px;
+	left:130px;
+	position:relative;
+	float:left;
+	height:600px;
+	font-size:24px;
+	text-align:center;
+	
+}
+#center dd{
+text-align:right;
+}
+
+#fclass6
+{
+     float:left;
+	 top:150px;
+	 height:200px;
+	 position:relative;
+	 width:100%;
+	 padding-bottom:60px;
+	  border:1px solid ;
+	 border-color:#999999;
+}

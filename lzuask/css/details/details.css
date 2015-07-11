@@ -1,0 +1,86 @@
+@CHARSET "UTF-8";
+#content{
+	width:780px;
+	height:auto;
+	float:left;
+	
+}
+#questions{
+	width:780px;
+	height:auto;
+	float:left;
+}
+#detailright{
+	width:200px;
+	height:auto;
+	float:right;
+}
+.nav{
+	width:120px;
+	height:300px;
+	float:left;
+	background:url(nav_bg.jpg) repeat;
+	border:2px solid green;
+	
+}
+.info{
+	width:640px;
+	height:300px;
+	float:left;
+	background:url(question_bg.jpg) repeat;
+	border:1px solid red;
+}
+.answer{
+	width:760px;
+	height:28px;
+	float:left;
+	text-align:right;
+}
+.answer input{
+	width:78px;
+	height:28px;
+	background:url() repeat;
+}
+.info h3{
+	margin-left:20px;
+	margin-top:10px;
+	color:green;
+}
+.info p{
+	width:auto;
+	height:auto;
+	margin-left:20px;
+	margin-top:6px;
+}
+#detailright h4{
+	width:auto;
+	height:auto;
+	text-align:center;
+	color:green;
+}
+#detailright p{
+	width:auto;
+	height:auto;
+	text-align:left;
+	margin-left:10px;
+	margin-top:10px;
+	font-size:16px;	
+}
+#detailright p a:link {
+ color: #000000;
+ TEXT-DECORATION: none
+}
+
+#detailright p a:visited {
+ COLOR: #000000;
+ TEXT-DECORATION: none
+}
+#detailright p a:hover {
+ COLOR: #ff7f24;
+ text-decoration: underline;
+}
+#detailright p a:active {
+ COLOR: #ff7f24;  
+ text-decoration: underline;
+}
+

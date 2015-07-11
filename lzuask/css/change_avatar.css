@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+ * 肖祖鹏
+ * ask.css
+ * 2012/7/17
+ *袁俊虎
+ *修改 
+ *2012/7/25
+*/
+p{margin:auto auto;
+padding:auto auto;
+font-size:18px;
+font-family:Verdana, Geneva, sans-serif;
+color:#333;
+}
+h1{
+margin:auto auto;
+padding:auto auto;
+font-size:15px;
+font-family:Verdana, Geneva, sans-serif;
+color:#333;
+}
+#person{
+	width:1000px;
+	height:800px;
+	margin:20px auto;
+	border:#039 1px solid;
+}
+
+.details{
+	width:780px;
+	height:800px;
+	border:#999999 1px solid;
+	float:right;
+}
+.details p{
+	width:600px;
+	height:25px;
+	color:red;
+	margin:10px 40px;
+}
+.avater{
+	width:600px;
+	height:158px;
+	float:left;
+	margin:10px 20px;
+}
+.avater img{
+	margin:0px 60px;
+}
+.operate{
+	width:600px;
+	height:158px;
+}
+.operate form input.select{
+	margin-left:60px;
+}
+.operate form input.submit{
+	width:80px;
+	height:25px;
+	margin-left:80px;
+	margin-top:20px;
+}
+	

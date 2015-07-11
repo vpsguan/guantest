@@ -1,0 +1,49 @@
+/* CSS Document */
+@charset "utf-8";
+*{margin:0;padding:0;}
+body{
+background-color:#ebf7ff;
+	margin: 0px;
+	padding:0px;
+	text-align:center;
+}
+#time{
+    background-image:url(../images/b0.jpg);
+	font-size:18px;
+	color:#FFFF33;
+	text-align:right;
+}
+#head{
+	position:relative;
+	margin:1px auto 0px auto;
+	width:100%;
+	height:160px;
+	text-align:left;
+}
+#headline{
+    height:30px;
+	width:100%;
+	margin:0px;
+	background:url(../images/bg.jpg) repeat;
+	/*background-color:#33CC00;*/
+	font-size:12px;
+}
+#headline ul{
+    list-style-type:none;
+	position:absolute;
+	display:inline;
+	width:99%
+	left:100px; 			/* 调整菜单文字的位置 */
+	padding:0px;
+	margin:0px;
+}
+#headline li{
+	float:left; 
+	text-align:center;
+	font-size:20px;
+}
+#headline ul li#one, #headline ul li#two, #headline ul li#three{ width:90px;}
+#headline ul li#four, #headline ul li#five, #headline ul li#six{ width:90px;}
+#headline a:link, #headline a:visited{
+font-size:18px;
+color:#00000

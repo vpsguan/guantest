@@ -1,0 +1,236 @@
+%-----
+#include<stdio.h>
+#include<string.h>%用指向指针的指针实现对已有的8个字符串进行排序
+void main()
+{
+	char *p[8];
+	char s[8][20]={"January", "February", "March", "April", "May", "June", "July","September"};
+	int i,j;
+	char *temp; 
+	for(i=0;i<8;i++)
+		p[i]=s[i];
+    for(j=0;j<7;j++)	{
+		for(i=0;i<7-j;i++)
+		if(strlen(p[i])>strlen(p[i+1]))
+		{	
+			temp=p[i+1];
+			p[i+1]=p[i];
+			p[i]=temp;
+		}
+	}
+	for(i=0;i<7;i++)	
+{
+		if(strlen(p[i])==strlen(p[i+1])&&strcmp(p[i],p[i+1])>0)
+		{
+			temp=p[i+1];
+			p[i+1]=p[i];
+			p[i]=temp;
+		}
+	}
+	for(i=0;i<8;i++)  
+	{
+		puts(*(p+i));  
+		printf("\n");
+	}
+}
+%-----
+%-----
+#include<stdio.h>%输入一行字符，按输入字符的反序建立一个字符结点的单向链表，并输出该链表中的字符
+#include<malloc.h>
+#include<string.h>
+#define LEN sizeof(struct str)
+struct str
+	{
+		char ch;
+		struct str *next;
+	};
+void main()
+{
+	void print(struct str *head);
+	struct str *head,*p1,*p2;
+	char s[30];
+	int i,len;
+	gets(s);
+	len=strlen(s);
+	head=(struct str *)malloc(LEN);
+	p2=head;
+	for(i=len-1;i>=0&&*(s+i)!=0;i--)
+	{
+		p2->ch=*(s+i);
+		p1=malloc(LEN);
+		p2->next=p1;
+		p2=p1;
+	}
+	p2->next=NULL;
+	print(head);
+}
+void print(struct str *head)
+{
+	struct str *p1;
+	p1=head;
+	do
+	{
+		printf("%c",p1->ch);
+		p1=p1->next;
+	}
+	while(p1->next!=NULL);
+	printf("\n");
+}
+%-----
+%-----
+#include<stdio.h>%链表实验尝试
+#include<malloc.h>
+#include<string.h>
+#define LEN sizeof(struct stu)
+struct stu
+{
+	int num;
+	char name[12];
+	int score[3];
+	struct stu *next;
+};
+void main()
+{
+
+	void insertl(struct stu *head,struct stu last);
+	void inserth(struct stu *head,struct stu first);
+	void insertm(struct stu *head,struct stu mid,int n);
+	void print(struct stu *head);
+	void del(struct stu *head,int n);
+	struct stu *head,*p1,*p2;
+	printf("请输入学生信息：\n");
+	head=malloc(LEN);
+	head->next=malloc(LEN);
+	p1=p2=head->next;
+	for(;p2->num==0;)
+	{
+		scanf("%d %s %d %d %d",&p2->num,p2->name,&p2->score[0],&p2->score[1],&p2->score[2]);
+		p1=malloc(LEN);
+		p2->next=p1;
+		p2=p1;
+	}
+	p2->next=NULL;                        	
+}                                         
+void insertl(struct stu *head,struct stu last)        
+{
+	struct stu *p1;
+	p1=head->next;
+	for(;p1!=NULL;)
+	{
+		p1=p1->next;
+	}
+	p1->next=&last;
+	last.next=NULL;
+
+}
+void inserth(struct stu *head,struct stu first)        
+ {
+	struct stu *p1;
+	p1=head->next;
+	head->next=&first;
+	first.next=p1;
+}
+void insertm(struct stu *head,struct stu mid,int n)  
+{
+	struct stu *p1,*p2;
+	int i;
+	p1=head;
+	for(i=0;i<n;i++)
+	{
+		p2=p1;
+		p1=p1->next;
+	}
+	p2->next=&mid;
+	mid.next=p1;
+}
+void del(struct stu *head,int n)                   
+	{
+struct stu *p1,*p2;
+	int i;
+	p1=head;
+	for(i=0;i<n;i++)
+	{
+		p2=p1;
+		p1=p1->next;
+	}
+	p2=p1->next;
+}
+void print(struct stu *head)                      
+{
+	struct stu *p1;
+	p1=head;
+	for(;p1->next!=NULL;)
+	{
+		printf("%d %s %d %d %d",p1->num,p1->name,p1->score[0],p1->score[1],p1->score[2]);
+		printf("\n");
+		p1=p1->next;
+	}
+}
+%-----
+%-----
+#include <stdio.h>%杨辉三角
+#define N 6
+main()
+{
+	int i,j;
+	int a[N][N];
+	for(i=0;i<N;i++) {a[i][i]=1;a[i][0]=1;}
+	for(i=2;i<N;i++)
+		for(j=1;j<i;j++)
+		{a[i][j]=a[i-1][j-1]+a[i-1][j];}
+		for(i=0;i<N;i++)
+		{
+			for(j=0;j<i;j++)
+				printf("%5d",a[i][j]);
+			printf("\n");
+		}
+%-----
+%-----
+#include <stdio.h>%冒泡算法
+void main()
+{
+	int a[10];
+	int i,j,t;
+	printf("input 10numbers :\n");
+	for (i=0;i<10;i++)
+		scanf("%d",&a[i]);
+	printf("\n");
+	for(j=0;j<9;j++)
+		for(i=0;i<9-j;i++)
+			if(a[i]>a[i+1])
+			{
+				t=a[i];
+				a[i]=a[i+1];
+				a[i+1]=t;
+			}
+			printf(":\n");
+			for(i=0;i<10;i++)
+				printf("%d",a[i]);
+			printf("\n");
+
+}
+%-----
+%-----
+#include <stdio.h>%分解质因数
+void main()
+{
+ int i,n;
+ printf("please input n:");
+ scanf("%d",&n);
+ printf("%d=",n);
+ for(i=2;i<n;i++)
+ {
+  while(i!=n)
+  {
+   if(n%i==0)
+   {
+    n=n/i;
+    printf("%d*",i);
+   }
+   else
+    break;
+  }
+ }
+ printf("%d\n",n);
+}
+%-----

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>兰大社联</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="admin/index.php">backindex</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="index.php">主页</a>              </li>
+              <li class="">
+                <a href="show.php">社联简介</a>              </li>
+              <li class="">
+                <a href="dongtai.php">社联动态</a>              </li>
+              <li class="">
+                <a href="message.php">社联公告</a>              </li>
+              <li class="">
+                <a href="down.php">常用下载</a>              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="jumbotron masthead"></div>
+
+<div class="bs-docs-social">
+  <div class="container">
+    <ul class="bs-docs-social-buttons">
+    
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="marketing">
+    <p class="marketing-byline"></p>
+
+    <div class="row-fluid">
+      <div class="span4">
+	  <h2><a href="newsc.php?tid={{$titletype0}}" style="color:#990000;">{{$titletype0}}</a></h2>
+        <img class="marketing-img" src="assets/img/bs-docs-twitter-github.png">
+        
+        <p>{{foreach from=$t0 item=s0 name=st }}
+		<label style=" color:#999999; font-size:12px; float:right;">		{{$s0.time}}</label>
+		<label style="text-align:left;"><a href="display_onenews.php?id={{$s0.id}}" style="color:#000000;">{{$s0.title}}</a></label>
+		{{if $smarty.foreach.st.iteration eq 6}} 
+        {{php}}break;{{/php}}
+        {{/if}}
+		{{/foreach}}</p>
+      </div>
+	   <div class="span4">
+	  <h2><a href="message.php"style="color:#990000;">{{$titletype2}}</a></h2>
+        <img class="marketing-img" src="assets/img/bs-docs-twitter-github.png">
+        
+        <p>{{foreach from=$t2 item=s2 name=st }}
+		<label style=" color:#999999; font-size:12px; float:right;">		{{$s2.time}}</label>
+		<label style="text-align:left;"><a href="display_onenews.php?id={{$s2.id}}"style="color:#000000;">{{$s2.title}}</a></label>
+		{{if $smarty.foreach.st.iteration eq 6}} 
+        {{php}}break;{{/php}}
+        {{/if}}
+		{{/foreach}}</p>
+      </div>
+	   <div class="span4">
+	  <h2><a href="newsc.php?tid={{$titletype4}}"style="color:#990000;">{{$titletype4}}</a></h2>
+        <img class="marketing-img" src="assets/img/bs-docs-twitter-github.png">
+        
+        <p>{{foreach from=$t4 item=s4 name=st }}
+		<label style=" color:#999999; font-size:12px; float:right;">		{{$s4.time}}</label>
+		<label style="text-align:left;"><a href="display_onenews.php?id={{$s4.id}}" style="color:#000000;">{{$s4.title}}</a></label>
+		{{if $smarty.foreach.st.iteration eq 6}} 
+        {{php}}break;{{/php}}
+        {{/if}}
+		{{/foreach}}</p>
+      </div>
+  </div>
+    <hr class="soften">
+	
+    <h1><a href="newsc.php?tid={{$titletype3}}"style="color:#990000;">{{$titletype3}}</a></h1>
+    <div class="row-fluid">
+      <ul class="thumbnails example-sites">
+	  {{foreach from=$t3 item=s3 name=st }}
+        <li class="span3">
+          <a class="thumbnail" href="display_onenews.php?id={{$s3.id}}" target="_blank">
+            <img src="{{$s3.image}}" alt="SoundReady.fm">
+          </a>
+		  <label><a href="display_onenews.php?id={{$s3.id}}"style="color:#000000;">{{$s3.title}}</a></label>
+        </li>
+		{{if $smarty.foreach.st.iteration eq 4}} 
+        {{php}}break;{{/php}}
+        {{/if}}
+		{{/foreach}}
+      </ul>
+     </div>
+  </div>
+
+</div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">Changelog</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+
+  </body>
+</html>

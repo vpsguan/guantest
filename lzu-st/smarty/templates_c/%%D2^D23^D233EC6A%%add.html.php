@@ -1,0 +1,40 @@
+<?php /* Smarty version 2.6.26, created on 2013-03-10 11:48:10
+         compiled from add.html */ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加</title>
+
+</head>
+
+<body>
+<script language="JavaScript" src="../date.js">
+</script>
+<h1 align="center">添加</h1>
+<form action="bianji.php"  method="post">
+<div id="add">
+
+<dd>标题:<input type="text" name="title"  ></input></dd>
+<dd>图片地址:<input type="text" name="image" ></input></dd>
+<dd>类别:<select name="rid">
+<option value="0">精彩新闻</option>
+<option value="1">社联动态</option>
+<option value="2">通知公告</option>
+<option value="3">展现自我</option>
+<option value="4">萃英快讯</option>
+</select></dd>
+<dd>时间: <input type="text" name="time" id="time" onclick="MyCalendar.SetDate(this)" ></dd>
+<dd>作者:<input type="text" name="editer" id="editer"  /></dd>
+<dd>内容:<textarea type="text" name="content" style="width:400px;height:120px;"  /><?php echo $this->_tpl_vars['content']; ?>
+</textarea></dd>
+<dd><input name="tijiao" type="submit" value="提交" /></dd>
+<dd><input name="reset" type="reset" value="重置" /></dd>		
+		<input type="hidden" name="id" value=<?php echo $this->_tpl_vars['id']; ?>
+ />
+		<input type="hidden" name="action" value=<?php echo $this->_tpl_vars['action']; ?>
+ />
+</div>
+</form>
+</body>
+</html>

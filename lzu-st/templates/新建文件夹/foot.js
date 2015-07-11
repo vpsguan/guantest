@@ -1,0 +1,13 @@
+document.write("<div id=\"fclass6\">");
+document.write("<ul>");
+document.write("<marquee direction=\"right\" onmouseover=\"this.stop();\" onmouseout=\"this.start();\" ><a href=\"http://www.baidu.com\" target=\"_blank\"><img src=\"images\/b3.jpg\" border=\"1\" /></a><img src=\"images\/b3.jpg\" border=\"1\" /><img src=\"images\/b3.jpg\" border=\"1\" /></marquee>");
+document.write("<hr />");
+document.write("</ul>");
+document.write("</div>");
+   document.write("<div id=\"footer\">");
+		document.write("<a href=\"#\" class=\"article\">网站首页</a> |");
+		document.write("<a href=\"#\" class=\"article\">兰大主页</a> |");
+		document.write("<a href=\"#\" class=\"article\">兰大教务处</a> |");
+		document.write("<a href=\"#\" class=\"article\">开源社区主页</a> |");
+		document.write("<p class=\"p3\"> 兰州大学社联</p>");
+	document.write("</div>");

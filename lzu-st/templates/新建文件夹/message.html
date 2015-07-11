@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="../css/message.css" /> 
+<link rel="stylesheet" type="text/css" href="../css/head.css" /> 
+<script language="javascript" type="text/javascript" src="templates/head.js" charset="gb2312"></script> 
+<title>简单介绍</title>
+</head>
+
+<body>
+<div id="left">
+活动名称</div>
+<div id="center">
+活动时间地点</div>
+<div id=right>
+活动举办方</div>
+<div id="b" style="text-align:left">
+{{foreach from=$t0 item=s0 key=index}}
+<label style=" color:#000000; font-size:24px; float:left; width:330px;">{{$s0.title}}</label>
+<label style=" color:#000000; font-size:24px; float:left; width:340px;">{{$s0.time}};{{$s0.content}}</label>
+<label style=" color:#000000; font-size:24px; float:left; width:330px;">{{$s0.editer}}</label>
+		{{/foreach}}</div>
+<script language="javascript" type="text/javascript" src="templates/foot.js" charset="gb2312"></script> 
+</body>
+</html>

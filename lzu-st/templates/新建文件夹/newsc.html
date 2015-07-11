@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="css/news.css" /> 
+<link rel="stylesheet" type="text/css" href="css/head.css" /> 
+<script language="javascript" type="text/javascript" src="templates/head.js" charset="gb2312"></script> 
+<title>新闻中心</title>
+</head>
+
+<body>
+<div id="title">
+<ul id="tid"><a href="index.php" style="color:#000000; text-decoration:none">主页</a> >{{$tid}} ></ul><hr />
+{{foreach from=$t0 item=s0 key=index}}
+		<ul>
+		<a href="display_onenews.php?id={{$s0.id}}" style="font-size:22px; color:#000000; text-decoration:none;">{{$s0.title}}</a>
+		<label style="text-align:right; color:#999999; font-size:12px; float:right;">		{{$s0.time}}</label></ul>
+		{{/foreach}}
+</div>
+<div id="right">
+此处显示一些相关的新闻或公告
+</div>
+<div id=right2>
+此处显示一些需求信息
+</div>
+
+<script language="javascript" type="text/javascript" src="templates/foot.js" charset="gb2312"></script> 
+</body>
+</html>
